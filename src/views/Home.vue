@@ -8,6 +8,7 @@
 					<v-text-field
 						v-model="model.search"
 						prepend-inner-icon="mdi-magnify"
+						placeholder="Поиск"
 						outlined
 						dense
 						clearable

@@ -16,15 +16,7 @@
 				</v-tab>
 				<v-tab to="/history/all">
 					<v-icon size="20">mdi-history</v-icon>
-					История (Все)
-				</v-tab>
-				<v-tab to="/history/added">
-					<v-icon size="20">mdi-plus</v-icon>
-					История (добавление)
-				</v-tab>
-				<v-tab to="/history/removed">
-					<v-icon size="20">mdi-delete</v-icon>
-					История (удаление)
+					История
 				</v-tab>
 			</v-tabs>
 		</v-container>

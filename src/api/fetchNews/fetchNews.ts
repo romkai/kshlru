@@ -16,7 +16,7 @@ export default function fetchNews(): Promise<News[]> {
 	})
 }
 
-function generateMockNews(itemsCount = 1500): News[] {
+function generateMockNews(itemsCount = 1000): News[] {
 	const arr: News[] = [];
 	let id = 0;
 	for (let i = 0; i < itemsCount; i++) {

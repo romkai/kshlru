@@ -34,7 +34,7 @@ class NewsStore {
 			? this.favoritesIds.push(id)
 			: this.favoritesIds.splice(index, 1);
 		const action = (index === -1) ? FavoritesAction.ADD_TO_FAVORITES : FavoritesAction.REMOVE_FROM_FAVORITES;
-		const dtm = new Date().toISOString();
+		const dtm = new Date().toISOString() + Math.round(Math.random() * 1000);
 		this.history.push({ id, name, action, dtm })
 	}
 	

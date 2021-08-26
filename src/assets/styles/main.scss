@@ -39,6 +39,7 @@ html {
 	&__header {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		background-color: #eff5fb;
 		padding: 4px;
 		border-radius: 4px 4px 0 0;
@@ -46,6 +47,7 @@ html {
 		border-bottom: none;
 
 		&-title {
+			flex: 1 1 auto;
 			font-size: 1.25rem;
 			font-weight: 500;
 			line-height: 40px;
@@ -66,4 +68,17 @@ html {
 			padding: 8px;
 		}
 	}
+}
+
+.virtual-scroller {
+	height: 100%;
+}
+
+.no-data {
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.75rem;
+	letter-spacing: 0.009375em;
+	text-align: center;
+	opacity: .7;
 }

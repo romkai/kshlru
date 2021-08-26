@@ -1,0 +1,69 @@
+
+html {
+	overflow-y: auto !important;
+}
+
+// scroll Style
+*::-webkit-scrollbar {
+	width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: rgba(72, 187, 200, .4);
+	border-radius: 4px;
+	min-height: 40px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: rgba(72, 187, 200, 1);
+}
+.scroll-wrapper {
+	padding-right: 2px !important;
+	flex: 1 1 auto;
+	height: 100%;
+	overflow: hidden;
+}
+
+.wrapper {
+	display: flex;
+	height: 100%;
+	margin: 0 -12px;
+}
+
+.section {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+
+	&__header {
+		display: flex;
+		flex-direction: row;
+		background-color: #eff5fb;
+		padding: 4px;
+		border-radius: 4px 4px 0 0;
+		border: 1px solid var(--v-secondary-base);
+		border-bottom: none;
+
+		&-title {
+			font-size: 1.25rem;
+			font-weight: 500;
+			line-height: 40px;
+			letter-spacing: 0.0125em;
+			padding-left: 8px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		flex: 1 1 auto;
+		border: 1px solid var(--v-secondary-base);
+		padding: 4px;
+
+		> *:not(.v-divider) {
+			padding: 8px;
+		}
+	}
+}

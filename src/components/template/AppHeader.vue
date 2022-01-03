@@ -4,7 +4,7 @@
 			<a href="/">
 				<v-img
 					class="app-bar__logo"
-					:src="require('../../assets/logo.png')"
+					:src="require('123../../assets/logo.png')"
 				></v-img>
 			</a>
 
